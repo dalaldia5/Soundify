@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left rounded m-1">
+        <div class="close">
+          <img class="invert" src="close.svg" alt="" />
+        </div>
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo"><img class="invert" src="logo.svg" alt="" /></div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="Home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="Search" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img
+              class="invert"
+              src="libraryicon.svg"
+              alt=""
+              style="height: 24px; width: 30px"
+            />
+            <h2>Your Library</h2>
+            <img
+              class="invert"
+              src="plusicon.svg"
+              alt=""
+              style="width: 30px; height: 15px; position: relative; left: 110px"
+            />
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                >Safety and Privacy Center</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                >Privacy Policy</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                >Cookies</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                >About Ads</a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/"
+                >Accessibility</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburgerContainer">
+              <img class="invert hamburger" src="hamburger.svg" alt="" />
+              <img src="left-arrow.svg" alt="" class="invert" />
+              <img src="right-arrow.svg" alt="" class="invert" />
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </div>
+        <div class="trendingSongs">
+          <h1>India's Best</h1>
+          <div class="cardContainer">
+            <div data-folder="HotHits" class="card">
+              <div class="play">
+                <svg
+                  fill="#000000"
+                  width="64px"
+                  height="64px"
+                  viewBox="-12 -12 48.00 48.00"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#000000"
+                  stroke-width="0.264"
+                >
+                  <g
+                    id="SVGRepo_bgCarrier"
+                    stroke-width="0"
+                    transform="translate(0.7200000000000006,0.7200000000000006), scale(0.94)"
+                  >
+                    <rect
+                      x="-12"
+                      y="-12"
+                      width="48.00"
+                      height="48.00"
+                      rx="24"
+                      fill="#1fdf64"
+                      strokewidth="0"
+                    ></rect>
+                  </g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000023557ae3c5d9608972f0e3ce2"
+                alt=""
+              />
+              <p>Hottest Hindi music that India is listening to...</p>
+            </div>
+            <div data-folder="IPop" class="card">
+              <div class="play">
+                <svg
+                  fill="#000000"
+                  width="64px"
+                  height="64px"
+                  viewBox="-12 -12 48.00 48.00"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#000000"
+                  stroke-width="0.264"
+                >
+                  <g
+                    id="SVGRepo_bgCarrier"
+                    stroke-width="0"
+                    transform="translate(0.7200000000000006,0.7200000000000006), scale(0.94)"
+                  >
+                    <rect
+                      x="-12"
+                      y="-12"
+                      width="48.00"
+                      height="48.00"
+                      rx="24"
+                      fill="#1fdf64"
+                      strokewidth="0"
+                    ></rect>
+                  </g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f0000000212de63da371d63aba8c212aa"
+                alt=""
+              />
+              <p>Hottest tracks from your favourite I-Pop Icons...</p>
+            </div>
+            <div data-folder="BollyCentral" class="card">
+              <div class="play">
+                <svg
+                  fill="#000000"
+                  width="64px"
+                  height="64px"
+                  viewBox="-12 -12 48.00 48.00"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#000000"
+                  stroke-width="0.264"
+                >
+                  <g
+                    id="SVGRepo_bgCarrier"
+                    stroke-width="0"
+                    transform="translate(0.7200000000000006,0.7200000000000006), scale(0.94)"
+                  >
+                    <rect
+                      x="-12"
+                      y="-12"
+                      width="48.00"
+                      height="48.00"
+                      rx="24"
+                      fill="#1fdf64"
+                      strokewidth="0"
+                    ></rect>
+                  </g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002ac1d414165e3fb3a94f7fc18"
+                alt=""
+              />
+              <p>Bollywood Central, jab baje toh seedha dil ke...</p>
+            </div>
+            <div data-folder="Rap91" class="card">
+              <div class="play">
+                <svg
+                  fill="#000000"
+                  width="64px"
+                  height="64px"
+                  viewBox="-12 -12 48.00 48.00"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#000000"
+                  stroke-width="0.264"
+                >
+                  <g
+                    id="SVGRepo_bgCarrier"
+                    stroke-width="0"
+                    transform="translate(0.7200000000000006,0.7200000000000006), scale(0.94)"
+                  >
+                    <rect
+                      x="-12"
+                      y="-12"
+                      width="48.00"
+                      height="48.00"
+                      rx="24"
+                      fill="#1fdf64"
+                      strokewidth="0"
+                    ></rect>
+                  </g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002b1fa353a9d957a655599e8d1"
+                alt=""
+              />
+              <p>India's Rap Scene. Cover - Emiway Bantai...</p>
+            </div>
+            <div data-folder="Punjabi101" class="card">
+              <div class="play">
+                <svg
+                  fill="#000000"
+                  width="64px"
+                  height="64px"
+                  viewBox="-12 -12 48.00 48.00"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#000000"
+                  stroke-width="0.264"
+                >
+                  <g
+                    id="SVGRepo_bgCarrier"
+                    stroke-width="0"
+                    transform="translate(0.7200000000000006,0.7200000000000006), scale(0.94)"
+                  >
+                    <rect
+                      x="-12"
+                      y="-12"
+                      width="48.00"
+                      height="48.00"
+                      rx="24"
+                      fill="#1fdf64"
+                      strokewidth="0"
+                    ></rect>
+                  </g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002dbf1e19c0d2c477ca951fc9d"
+                alt=""
+              />
+              <p>Ultimate 101 Punjabi Hits with Parmish Verma...</p>
+            </div>
+            <div class="playbar">
+              <div class="seekbar">
+                <div class="circle"></div>
+              </div>
+              <div class="abovebar">
+                <div class="songinfo"></div>
+                <div class="songbuttons">
+                  <img id="previous" src="prevsong.svg" alt="" />
+                  <img id="play" src="pause.svg" alt="" />
+                  <img id="next" src="nextsong.svg" alt="" />
+                </div>
+                <div class="song" style="display: flex; width: 140px">
+                  <div class="songtime"></div>
+                  <div class="volume">
+                    <img src="volume.svg" alt="" />
+                    <div class="range">
+                      <input type="range" name="volume" id="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
