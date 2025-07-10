@@ -45,7 +45,7 @@ Whether you're a developer exploring frontend projects or a music enthusiast exp
 1. **Loads Songs from JSON:** Songs and metadata are mapped via JSON for easy scalability  
 2. **Audio Control Binding:** All controls (play, pause, next, seek) are wired using JavaScript event listeners  
 3. **Dynamic Rendering:** Song titles, artists, and UI elements update in sync with playback  
-4. **Folder Navigation:** Different genre folders like `punjabi101`, `oldisgold`, etc., load different song sets dynamically
+4. **Folder Navigation:** Different genre folders like `Punjabi101`, `BollyCentral`, etc., load different song sets dynamically
 
 ---
 
