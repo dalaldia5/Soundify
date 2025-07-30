@@ -4,7 +4,7 @@ let currentSong = "";
 let currFolder;
 let songs;
 let audio;
-let songMetadata = {}; // To hold artist data for current folder
+let songMetadata = {};
 
 function formatTime(seconds) {
   const mins = Math.floor(seconds / 60);
@@ -17,16 +17,17 @@ function formatTime(seconds) {
 async function getSongs(folder) {
   currFolder = folder;
 
-  // Fetch metadata.json
+  // ✅ Fixed path to metadata.json
   try {
-    const metaRes = await fetch(`/spotify_clone/${currFolder}/metadata.json`);
+    const metaRes = await fetch(`${currFolder}/metadata.json`);
     songMetadata = await metaRes.json();
   } catch (err) {
     console.error("Metadata fetch failed", err);
     songMetadata = {};
   }
 
-  const a = await fetch(`/spotify_clone/${currFolder}/`);
+  // ✅ Fixed path to fetch song list
+  const a = await fetch(`${currFolder}/`);
   const response = await a.text();
   const div = document.createElement("div");
   div.innerHTML = response;
@@ -46,7 +47,9 @@ async function getSongs(folder) {
 const playMusic = (track) => {
   if (audio) audio.pause();
   currentSong = track;
-  audio = new Audio(`/spotify_clone/${currFolder}/` + track);
+
+  // ✅ Fixed path to MP3 file
+  audio = new Audio(`${currFolder}/${track}`);
 
   audio.addEventListener("timeupdate", () => {
     document.querySelector(".songtime").innerHTML = `${formatTime(
